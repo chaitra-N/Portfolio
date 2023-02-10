@@ -77,12 +77,18 @@
 
     a.about-link {
       &::after {
-        content: 'About';
+        content: 'ABOUT';
       }
     }
     a.contact-link {
       &::after {
-        content: 'Contact';
+        content: 'CONTACT';
+      }
+    }
+
+    a.portfolio-link {
+      &::after {
+        content: 'MY WORK';
       }
     }
 
