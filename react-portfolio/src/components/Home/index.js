@@ -9,7 +9,7 @@ import './../Home/index.scss'
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
   const string = 'haitra'
-  const job = 'webdeveloper.'
+  const job = 'Web Developer.'
   const nameString = [...string]
   const jobString = [...job]
 
@@ -50,8 +50,11 @@ const Home = () => {
           <Link to="/contact" className="flat-button">
             CONTACT ME
           </Link>
+          <Link to="/portfolio" className="button">
+            MY WORK
+          </Link>
         </div>
-        <Logo />
+        {/* <Logo /> */}
       </div>
       <Loader type="pacman" />
     </>
