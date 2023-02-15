@@ -8,7 +8,9 @@ body {
   color: #444;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #022c43;
+  background-size: cover;
+  background-image: url('./assets/images/background.png');
+  /* background: #334eb1; */
   overflow: hidden;
   display: block;
 }
