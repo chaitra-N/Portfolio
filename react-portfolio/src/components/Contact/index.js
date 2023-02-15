@@ -4,6 +4,8 @@ import './../Contact/index.scss'
 import { useEffect, useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
 
+import ContactImage from './../../assets/images/contact1.png'
+
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
   const refForm = useRef()
@@ -94,7 +96,9 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <Loader type="pacman" />
+      <div className="img-container">
+        <img src={ContactImage} alt="contact" className="solid-image" />
+      </div>
     </>
   )
 }

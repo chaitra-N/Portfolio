@@ -35,7 +35,11 @@
   input[type='email'] {
     width: 100%;
     border: 0;
-    background: #115173;
+    background: linear-gradient(
+      90deg,
+      rgba(0, 102, 255, 0.7819502801120448) 35%,
+      rgba(16, 169, 157, 0.7987570028011204) 100%
+    );
     height: 50px;
     font-size: 16px;
     color: #fff;
@@ -45,7 +49,11 @@
   textarea {
     width: 100%;
     border: 0;
-    background: #115173;
+    background: linear-gradient(
+      90deg,
+      rgba(0, 102, 255, 0.7819502801120448) 35%,
+      rgba(16, 169, 157, 0.7987570028011204) 100%
+    );
     height: 50px;
     font-size: 16px;
     color: #fff;
@@ -68,5 +76,28 @@
     float: right;
     text-align: center;
     margin-right: 10px;
+  }
+}
+
+.img-container {
+  z-index: 0;
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  right: 15%;
+  bottom: 0;
+  left: auto;
+  margin: auto;
+  .solid-image {
+    position: absolute;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: 0;
+    margin: auto;
+    width: 800px;
+    z-index: 1;
+    animation: fadeIn 1s 1.7s backwards;
   }
 }
