@@ -16,6 +16,7 @@ import {
   faLinkedin,
 } from '@fortawesome/free-brands-svg-icons'
 import { useState } from 'react'
+import Email from './Email'
 
 const Sidebar = () => {
   const [showNav, setShowNav] = useState(false)
@@ -98,12 +99,8 @@ const Sidebar = () => {
           </a>
         </li>
         <li>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://dev.chaitracr@gmail.com"
-          >
-            <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
+          <a target="_blank" rel="noreferrer">
+            <Email />
           </a>
         </li>
       </ul>
