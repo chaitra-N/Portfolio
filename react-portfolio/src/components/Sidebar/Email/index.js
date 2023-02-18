@@ -4,10 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Email = () => {
   return (
-    <Link
-      href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSKjRGsGNFhMZDpQCDksqZcXVQWtGtkXGJgPFfbPwJDVBvLCbJXPbTHrKcLnVkFLxKmmRKTm"
-      to="dev.chaitracr@gmail.com"
-    >
+    <Link href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSKjRGsGNFhMZDpQCDksqZcXVQWtGtkXGJgPFfbPwJDVBvLCbJXPbTHrKcLnVkFLxKmmRKTm">
       <FontAwesomeIcon icon={faEnvelope} />
     </Link>
   )

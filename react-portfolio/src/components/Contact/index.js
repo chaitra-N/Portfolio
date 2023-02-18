@@ -3,6 +3,9 @@ import AnimatedLetters from '../AnimatedLetters'
 import './../Contact/index.scss'
 import { useEffect, useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
+import Email from '../Sidebar/Email'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 // import Cursor from '../Cursor'
 
 // import ContactImage from './../../assets/images/contact1.png'
@@ -55,11 +58,15 @@ const Contact = () => {
               idx={15}
             />
           </h1>
-          <p className="text">
+          <p>
             I am interested in freelance oppertunities and am excited to work on
             new projects. Let me know if you are interested or if you have any
             other questions are thoughts.
           </p>
+          <a target="_blank" rel="noreferrer">
+            <Email />
+            &nbsp; developer.chaitracr@gmail.com
+          </a>
         </div>
         <div className="contact-form">
           <form ref={refForm} onSubmit={sentEmail}>
