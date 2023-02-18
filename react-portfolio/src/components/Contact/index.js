@@ -1,10 +1,11 @@
-import Loader from 'react-loaders'
+// import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import './../Contact/index.scss'
 import { useEffect, useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
+// import Cursor from '../Cursor'
 
-import ContactImage from './../../assets/images/contact1.png'
+// import ContactImage from './../../assets/images/contact1.png'
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -54,51 +55,46 @@ const Contact = () => {
               idx={15}
             />
           </h1>
-          <p>
+          <p className="text">
             I am interested in freelance oppertunities and am excited to work on
             new projects. Let me know if you are interested or if you have any
             other questions are thoughts.
           </p>
-          <div className="contact-form">
-            <form ref={refForm} onSubmit={sentEmail}>
-              <ul>
-                <li className="half">
-                  <input type="text" name="name" placeholder="name" required />
-                </li>
-                <li className="half">
-                  <input
-                    type="text"
-                    name="email"
-                    placeholder="email"
-                    required
-                  />
-                </li>
-                <li>
-                  <input
-                    placeholder="Subject"
-                    required
-                    type="text"
-                    name="subject"
-                  />
-                </li>
-                <li>
-                  <textarea
-                    placeholder="Message"
-                    required
-                    name="message"
-                  ></textarea>
-                </li>
-                <li>
-                  <input type="submit" className="flat-buttons" value="Send" />
-                </li>
-              </ul>
-            </form>
-          </div>
+        </div>
+        <div className="contact-form">
+          <form ref={refForm} onSubmit={sentEmail}>
+            <ul>
+              <li className="half">
+                <input type="text" name="name" placeholder="name" required />
+              </li>
+              <li className="half">
+                <input type="text" name="email" placeholder="email" required />
+              </li>
+              <li>
+                <input
+                  placeholder="Subject"
+                  required
+                  type="text"
+                  name="subject"
+                />
+              </li>
+              <li>
+                <textarea
+                  placeholder="Message"
+                  required
+                  name="message"
+                ></textarea>
+              </li>
+              <li>
+                <input type="submit" className="flat-buttons" value="Submit" />
+              </li>
+            </ul>
+          </form>
         </div>
       </div>
-      <div className="img-container">
+      {/* <div className="img-container">
         <img src={ContactImage} alt="contact" className="solid-image" />
-      </div>
+      </div> */}
     </>
   )
 }

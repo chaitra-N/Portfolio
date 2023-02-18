@@ -7,6 +7,18 @@
     width: 40%;
     max-height: 90%;
   }
+  .cursor {
+    position: absolute;
+    background-color: #ffd700;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    top: -300px;
+    bottom: 0;
+    left: -190px;
+    pointer-events: none;
+    opacity: 0;
+  }
 
   h1 {
     color: #fff;
@@ -115,6 +127,17 @@ h2 {
       transform: none;
       padding: 10px;
       box-sizing: border-box;
+    }
+    .cursor {
+      position: absolute;
+      background-color: #ffd700;
+      height: 32px;
+      width: 32px;
+      border-radius: 50%;
+      top: -50px;
+      bottom: 0;
+      left: 0;
+      pointer-events: none;
     }
     .flat-button,
     .button {

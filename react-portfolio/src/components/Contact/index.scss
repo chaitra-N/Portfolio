@@ -1,6 +1,14 @@
 .contact-form {
   width: 100%;
   margin-top: 20px;
+  position: absolute;
+  right: 8%;
+  top: 60%;
+  transform: translateY(-50%);
+  width: 35%;
+  vertical-align: middle;
+  display: table-cell;
+  max-height: 90%;
 
   ul {
     padding: 0;
@@ -65,6 +73,7 @@
   .flat-buttons {
     color: #ffd700;
     font-size: 11px;
+    font-weight: 300;
     letter-spacing: 3px;
     text-decoration: none;
     padding: 8px 10px;
@@ -72,31 +81,36 @@
     border-radius: 4px;
     background: 0 0;
     text-transform: uppercase;
-    float: right;
+    float: left;
     text-align: center;
     margin-right: 10px;
+
+    &:hover {
+      background: #ffd700;
+      color: #333;
+    }
   }
 }
 
-.img-container {
-  z-index: 0;
-  width: 400px;
-  height: 600px;
-  position: absolute;
-  top: 0;
-  right: 25%;
-  bottom: 0;
-  left: auto;
-  margin: auto;
-  .solid-image {
-    position: absolute;
-    top: auto;
-    right: auto;
-    bottom: auto;
-    left: 0;
-    margin: auto;
-    width: 300%;
-    z-index: 1;
-    animation: fadeInLeft 1s 1.7s backwards;
-  }
-}
+// .img-container {
+//   z-index: 0;
+//   width: 400px;
+//   height: 600px;
+//   position: absolute;
+//   top: 0;
+//   right: 25%;
+//   bottom: 0;
+//   left: auto;
+//   margin: auto;
+//   .solid-image {
+//     position: absolute;
+//     top: auto;
+//     right: auto;
+//     bottom: auto;
+//     left: 0;
+//     margin: auto;
+//     width: 300%;
+//     z-index: 1;
+//     animation: fadeInLeft 1s 1.7s backwards;
+//   }
+// }
