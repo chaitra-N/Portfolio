@@ -1,14 +1,8 @@
-// import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import './../Contact/index.scss'
 import { useEffect, useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
 import Email from '../Sidebar/Email'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-// import Cursor from '../Cursor'
-
-// import ContactImage from './../../assets/images/contact1.png'
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
