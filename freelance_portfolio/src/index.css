@@ -1,0 +1,25 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font: 300 11px/1.4 'Helvetica Neue', sans-serif;
+  color: #444;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-image: url('./assets/images/background.png');
+  /* background: #334eb1; */
+  overflow: hidden;
+  display: block;
+}
+
+@media screen and(max-width: 1200px) {
+  body {
+    overflow: visible;
+  }
+}
