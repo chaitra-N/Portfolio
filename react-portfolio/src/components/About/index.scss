@@ -1,3 +1,39 @@
+.about-page {
+  .cursor {
+    position: absolute;
+    background-color: #ffd700;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    top: -300px;
+    bottom: 0;
+    left: -170px;
+    pointer-events: none;
+    opacity: 0;
+  }
+  .myWorkButton {
+    color: #ffd700 !important;
+    font-size: 13px !important;
+    font-weight: 400 !important;
+    letter-spacing: 4px !important;
+    font-family: sans-serif !important;
+    text-decoration: none !important;
+    padding: 0px 15px !important;
+    border: 1px solid #ffd700 !important;
+    margin-top: 25px !important;
+    margin-left: 10px !important;
+    float: left !important;
+    animation: fadeIn 1s 1.8 backwards !important;
+    white-space: nowrap !important;
+    text-align: center !important;
+
+    &:hover {
+      background: #ffd700;
+      color: #333 !important;
+    }
+  }
+}
+
 .stage-cube-cont {
   width: 50%;
   height: 100%;
@@ -88,5 +124,24 @@
     width: 100%;
     height: 0%;
     overflow: visible;
+  }
+  .about-page {
+    .cursor {
+      position: absolute;
+      background-color: #ffd700;
+      height: 32px;
+      width: 32px;
+      border-radius: 50%;
+      top: -50px;
+      bottom: 0;
+      left: 0;
+      pointer-events: none;
+    }
+    .myWorkButton {
+      float: none;
+      display: block;
+      margin: 20px auto 0 auto;
+      width: 125px;
+    }
   }
 }

@@ -6,35 +6,15 @@ import Logo from '../Home/Logo'
 import LogoTitle from './../../assets/images/logo-s.png'
 import './../Home/index.scss'
 import { motion } from 'framer-motion'
-
+import { useGlobalContext } from '../context/context'
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
-  const [mousePosition, setMousePosition] = useState({
-    x: 0,
-    y: 0,
-  })
-
-  const [cursorVariant, setCoursorVariant] = useState('default')
+  const { variants, cursorVariant, textEnter, textLeave } = useGlobalContext()
 
   const string = 'haitra'
   const job = 'Web Developer.'
   const nameString = [...string]
   const jobString = [...job]
-
-  useEffect(() => {
-    const mouseMove = (e) => {
-      console.log(e)
-      setMousePosition({
-        x: e.clientX,
-        y: e.clientY,
-      })
-    }
-    window.addEventListener('mousemove', mouseMove)
-
-    return () => {
-      window.removeEventListener('mousemove', mouseMove)
-    }
-  }, [])
 
   useEffect(() => {
     let timeoutId = setTimeout(() => {
@@ -45,24 +25,6 @@ const Home = () => {
       clearTimeout(timeoutId)
     }
   })
-
-  const variants = {
-    default: {
-      x: mousePosition.x - 16,
-      y: mousePosition.y - 16,
-    },
-    text: {
-      height: 100,
-      width: 100,
-      x: mousePosition.x - 75,
-      y: mousePosition.y - 75,
-      mixBlendMode: 'difference',
-      opacity: 1,
-    },
-  }
-
-  const textEnter = () => setCoursorVariant('text')
-  const textLeave = () => setCoursorVariant('default')
 
   return (
     <>
