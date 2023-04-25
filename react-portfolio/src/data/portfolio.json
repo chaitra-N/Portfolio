@@ -17,9 +17,9 @@
     {
       "id": "3",
       "cover": "/portfolio/1/project3.jpg",
-      "title": "Tic Tac Toe Game",
-      "description": "React, JSX,",
-      "url": "https://www.google.com"
+      "title": "Todo List App",
+      "description": "React, JS, Firebase",
+      "url": "https://todlistapp111.netlify.app"
     }
   ]
 }
